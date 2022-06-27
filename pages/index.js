@@ -20,7 +20,7 @@ const Home = () => {
 
     <div className="h-screen flex flex-row items-center justify-center mx-6 bg-pattern-2">
       <div className='flex flex-col items-center justify-center mx-10 bg-blue-100/70'>
-        <div class="text-4xl text-center m-6">Welcome to my app, here you can use some Atificial Inteligence models applyed to labeling images.</div>
+        <div className="text-4xl text-center m-6">Welcome to my app, here you can use some Atificial Inteligence models applyed to labeling images.</div>
         <p className=''>This app will unblock all your creativity diring image procesing.</p>
         <button className='m-6 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded'> Get started</button>
       </div>
