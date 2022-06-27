@@ -2,6 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import Nav from './Nav.js'
 import NavItem from './NavItem.js'
+import Link from "next/link";
 
 const Home = () => {
   return <div>
@@ -9,10 +10,21 @@ const Home = () => {
       <Nav>
         <img src="/logoAI.png" className='flex-none w-16 h-16 m-2 ' />
         <a className='flex-auto w-30'></a>
-        <NavItem href="/">Home</NavItem>
-        <NavItem href="/home">Projects</NavItem>
-        <NavItem href="/home">Data</NavItem>
-        <NavItem href="/login">LogIn</NavItem>
+        <li className="px-3 py-3 my-2  rounded-lg hover:bg-slate-100 hover:text-slate-900 ">
+          <Link href="/">
+            <a className={'font-medium align-middle text-slate-700 '} > Home </a>
+          </Link>
+        </li>
+        <li className="px-3 py-3 my-2  rounded-lg hover:bg-slate-100 hover:text-slate-900 ">
+          <Link href="/">
+            <a className={'font-medium align-middle text-slate-700 '} > Data </a>
+          </Link>
+        </li>
+        <li className="px-3 py-3 my-2  rounded-lg hover:bg-slate-100 hover:text-slate-900 ">
+          <Link href="/signin">
+            <a className={'font-medium align-middle text-slate-700 '} > Sign In </a>
+          </Link>
+        </li>
       </Nav>
     </div>
     <div className='flex flex-col items-center mx-6 mt-6'>
