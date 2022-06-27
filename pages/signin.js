@@ -16,7 +16,7 @@ const Home = () => {
       </Nav>
     </div>
     <div className='flex flex-col items-center mx-6 mt-6'>
-        <form className="w-full max-w-lg ">
+        <div className="w-full max-w-lg ">
         <div className="flex flex-wrap -mx-3 mb-6">
             <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
             <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
@@ -111,7 +111,7 @@ const Home = () => {
         <div className='flex flex-wraper flex-col'>
             <button className='w-full bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 mt-6 rounded'>Send </button>
         </div>
-        </form>
+        </div>
     </div>
 
   </div>
