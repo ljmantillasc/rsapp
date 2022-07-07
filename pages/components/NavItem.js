@@ -14,7 +14,7 @@ export default function NavItem({ href="/", rounded = "", children }) {
     }
 
     return (
-      <li className="flex w-20 ">
+      <li className="flex w-15 md:w-20 lg:w-40 ">
         <Link href={href}>
             <a className={round_label+" p-2 w-full bg-blue-500 text-center hover:bg-blue-700 "} >
             {children}

@@ -9,7 +9,7 @@ export default function ServiceItem({title, service, description, tasks=[{id:1, 
     );
 
     return (
-        <div className="flex flex-col items-center text-center border-t-4 border-b border-blue-700 m-2 p-2" >
+        <div className="flex flex-col items-center text-center border-t-8 border-b border-blue-700 m-2 p-2" >
             <div className="text-2xl">
                 {title}
             </div>

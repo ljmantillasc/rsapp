@@ -4,6 +4,7 @@ import Nav from './components/Nav';
 import NavItem from './components/NavItem';
 import Link from "next/link";
 import ServiceItem from './components/serviceItem';
+import ProjectItem from './components/ProjectsItem';
 
 const LEFT = 1;
 const RIGHT = 2;
@@ -40,36 +41,80 @@ const Home = () => {
           <h3 className='text-left text-2xl text-white pb-2'>Por sector</h3>
         </div>
         <div className='grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-4'>
-          <ServiceItem 
+          <ServiceItem
             title={"Common"}
-            service = {"monitoring 1-10 ha"}
-            description = {"A monitoring service of take images and process using simple methods."}
-            tasks = { [{id:1, description:"Taking images"}, 
-                      {id:2, description:"Minimal funcionalities"}, 
-                      {id:3, description:"processing time"}] }
+            service={"monitoring 1-10 ha"}
+            description={"A monitoring service of take images and process using simple methods."}
+            tasks={[{ id: 1, description: "Taking images" },
+            { id: 2, description: "Minimal funcionalities" },
+            { id: 3, description: "processing time" }]}
           />
-          <ServiceItem 
+          <ServiceItem
             title={"Startups"}
-            service = {"monitoring 10-100 ha"}
-            description = {"A monitoring service of take images and process using artificial inteligence arquitectures."}
-            tasks = { [{id:1, description:"Taking images"}, 
-                      {id:2, description:"Medium funcionalities"}, 
-                      {id:3, description:"Processing time and AI segmentation"}] }
+            service={"monitoring 10-100 ha"}
+            description={"A monitoring service of take images and process using artificial inteligence arquitectures."}
+            tasks={[{ id: 1, description: "Taking images" },
+            { id: 2, description: "Medium funcionalities" },
+            { id: 3, description: "Processing time and AI segmentation" }]}
           />
-          <ServiceItem 
+          <ServiceItem
             title={"Enterprises"}
-            service = {"monitoring 100-more ha"}
-            description = {"A monitoring service, include drones and artificial inteligence arquitectures"}
-            tasks = { [{id:1, description:"Taking images by drones"}, 
-                      {id:2, description:"Full funcionalities"}, 
-                      {id:3, description:"processing time and trained AI arquitectures"}] }
+            service={"monitoring 100-more ha"}
+            description={"A monitoring service, include drones and artificial inteligence arquitectures"}
+            tasks={[{ id: 1, description: "Taking images by drones" },
+            { id: 2, description: "Full funcionalities" },
+            { id: 3, description: "processing time and trained AI arquitectures" }]}
           />
-          
+
         </div>
       </section>
-      <section className='h-screen m-6'>
+      <section className='m-6'>
         <div className='w-full bg-blue-900'>
           <h2 className='text-center text-4xl font-bold text-white py-6'>Our actual projects</h2>
+        </div>
+        <div className='grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4'>
+          <ProjectItem 
+            image = '/rs_image_1.svg'
+            project='Classification'
+            description='A set of networks which process satellite images.'
+            algorithms='CNN, Y-net'
+            key={1} 
+          />
+          <ProjectItem 
+            image = '/rs_image_2.svg'
+            project='Lakes identification'
+            description='A set of networks which process satellite images to find lakes location.'
+            algorithms='Y-net'
+            key={1} 
+          />
+          <ProjectItem 
+            image = '/rs_image_3.svg'
+            project='Satellite images binarization'
+            description='A neural network to binarise satellite images and identify glaciers.'
+            algorithms='Autoencoder, CNN, and Y-net'
+            key={1} 
+          />
+          <ProjectItem 
+            image = '/rs_image_4.svg'
+            project='Maps generation'
+            description='A set of networks to classify neural networks.'
+            algorithms='CNN'
+            key={1} 
+          />
+          <ProjectItem 
+            image = '/rs_image_5.svg'
+            project='Lakes identification'
+            description='A set of networks which process satellite images to find lakes borders.'
+            algorithms='Autoencoder, CNN, and Y-net'
+            key={1} 
+          />
+          <ProjectItem 
+            image = '/rs_image_6.svg'
+            project='Clasification areas'
+            description='A set of networks which generate a segmentation of satellite images.'
+            algorithms='Autoencoder, CNN, and Y-net'
+            key={1} 
+          />
         </div>
       </section>
       <footer className='m-6'>© 2022, Remote Sensing AI, Inc. Todos los derechos reservados.</footer>
