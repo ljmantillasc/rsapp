@@ -39,7 +39,7 @@ const Home = () => {
         <div>
           <h3 className='text-left text-2xl text-white pb-2'>Por sector</h3>
         </div>
-        <div className='grid grid-cols-3 gap-4'>
+        <div className='grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-4'>
           <ServiceItem 
             title={"Common"}
             service = {"monitoring 1-10 ha"}
@@ -69,7 +69,7 @@ const Home = () => {
       </section>
       <section className='h-screen m-6'>
         <div className='w-full bg-blue-900'>
-          <h2 className='text-center text-4xl font-bold text-white py-6'>Explore nuestros proyectos actuales</h2>
+          <h2 className='text-center text-4xl font-bold text-white py-6'>Our actual projects</h2>
         </div>
       </section>
       <footer className='m-6'>© 2022, Remote Sensing AI, Inc. Todos los derechos reservados.</footer>
