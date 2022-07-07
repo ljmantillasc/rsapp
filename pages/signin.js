@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
-import Nav from './Nav.js'
-import NavItem from './NavItem.js'
+import Nav from './components/Nav.js'
+import NavItem from './components/NavItem.js'
 import Link from "next/link";
 
 const Home = () => {

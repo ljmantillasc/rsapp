@@ -19,12 +19,22 @@ function NumberList(props) {
         </li>
     );
     return (
-        <div>
-            <h1>Global Options</h1>
-            <p>Similar to how the human brain gains knowledge and understanding, machine learning relies on input, such as training data or knowledge graphs, to understand entities, domains and the connections between them. With entities defined, deep learning can begin.</p>
-            <ul>
-                {listOption}
-            </ul>
+        <div className="container mx-auto h-screen bg-red-300">
+            <div className="h-1/5 bg-red-400">
+                <h1>Global Options</h1>
+            </div>
+            
+            <div className="h-3/5 bg-green-300">
+                <p>Similar to how the human brain gains knowledge and understanding, machine learning relies on input, such as training data or knowledge graphs, to understand entities, domains and the connections between them. With entities defined, deep learning can begin.</p>
+                <ul>
+                    {listOption}
+                </ul>
+            </div>
+
+            <div className=" h-1/5 bg-gray-400">
+                final
+            </div>
+            
         </div>
     );
 }
