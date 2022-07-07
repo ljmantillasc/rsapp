@@ -4,7 +4,7 @@ import { useRouter } from 'next/router'
 const LEFT = 1;
 const RIGHT = 2;
 
-export default function NavItem({ href, rounded = "", children }) {
+export default function NavItem({ href="/", rounded = "", children }) {
     let round_label=""
     if(rounded == LEFT ){
       round_label = "rounded-l"

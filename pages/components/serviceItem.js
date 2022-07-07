@@ -1,6 +1,6 @@
 
 
-export default function ServiceItem({title, service, description, tasks}) {
+export default function ServiceItem({title, service, description, tasks=[{id:1, description:"Taking images"}]}) {
 
     const listOption = tasks.map( (item) =>
         <li key={item.id}>
