@@ -3,7 +3,7 @@ import Image from 'next/image';
 import Nav from '../components/Nav';
 import NavItem from '../components/NavItem';
 
-import Menu from '../components/menu';
+import Menu from '../components/Menu';
 import MenuItem from '../components/MenuItem';
 
 const LEFT = 1;
@@ -18,7 +18,7 @@ export default function DataProcess() {
                 <Nav>
                     <NavItem rounded={LEFT} href="/">Home</NavItem>
                     <NavItem rounded={CENTER} href="/project">Projects</NavItem>
-                    <NavItem rounded={CENTER} href="/data">Data</NavItem>
+                    <NavItem rounded={CENTER} href="/modAI/data">Data</NavItem>
                     <NavItem rounded={CENTER} href="/signin">Sign In</NavItem>
                     <NavItem rounded={RIGHT} href="/login">Log In</NavItem>
                 </Nav>
