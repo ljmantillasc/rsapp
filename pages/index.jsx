@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Image from 'next/image';
 import Nav from './components/Nav';
 import NavItem from './components/NavItem';
@@ -10,6 +10,9 @@ const LEFT = 1;
 const RIGHT = 2;
 const CENTER = 0;
 
+// useEffect( () =>{
+//   console.log("hello")
+// }, [] )
 
 const Home = () => {
   return (
@@ -17,11 +20,11 @@ const Home = () => {
       <div className='flex mx-6 items-center my-2 '>
         <Image src="/logo1.svg" height="50px" width="140px" ></Image>
         <Nav>
-          <NavItem rounded={LEFT} href="/home">Home</NavItem>
-          <NavItem rounded={CENTER} href="/home">Projects</NavItem>
-          <NavItem rounded={CENTER} href="/home">Data</NavItem>
-          <NavItem rounded={CENTER} href="/home">Sign In</NavItem>
-          <NavItem rounded={RIGHT} href="/log In">Log In</NavItem>
+          <NavItem rounded={LEFT} href="/">Home</NavItem>
+          <NavItem rounded={CENTER} href="/project">Projects</NavItem>
+          <NavItem rounded={CENTER} href="/modAI/data">Data</NavItem>
+          <NavItem rounded={CENTER} href="/signin">Sign In</NavItem>
+          <NavItem rounded={RIGHT} href="/login">Log In</NavItem>
         </Nav>
       </div>
       <section>
@@ -85,35 +88,35 @@ const Home = () => {
             project='Lakes identification'
             description='A set of networks which process satellite images to find lakes location.'
             algorithms='Y-net'
-            key={1} 
+            key={2} 
           />
           <ProjectItem 
             image = '/rs_image_3.svg'
             project='Satellite images binarization'
             description='A neural network to binarise satellite images and identify glaciers.'
             algorithms='Autoencoder, CNN, and Y-net'
-            key={1} 
+            key={3} 
           />
           <ProjectItem 
             image = '/rs_image_4.svg'
             project='Maps generation'
             description='A set of networks to classify neural networks.'
             algorithms='CNN'
-            key={1} 
+            key={4} 
           />
           <ProjectItem 
             image = '/rs_image_5.svg'
             project='Lakes identification'
             description='A set of networks which process satellite images to find lakes borders.'
             algorithms='Autoencoder, CNN, and Y-net'
-            key={1} 
+            key={5} 
           />
           <ProjectItem 
             image = '/rs_image_6.svg'
-            project='Clasification areas'
+            project='Areas identification'
             description='A set of networks which generate a segmentation of satellite images.'
             algorithms='Autoencoder, CNN, and Y-net'
-            key={1} 
+            key={6} 
           />
         </div>
       </section>

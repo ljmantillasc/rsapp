@@ -13,11 +13,11 @@ const Home = () => {
     <div className='flex mx-6 items-center my-2 '>
       <Image src="/logo1.svg" height="50px" width="140px" ></Image>
       <Nav>
-        <NavItem rounded={LEFT} href="/home">Home</NavItem>
-        <NavItem rounded={CENTER} href="/home">Projects</NavItem>
-        <NavItem rounded={CENTER} href="/home">Data</NavItem>
-        <NavItem rounded={CENTER} href="/home">Sign In</NavItem>
-        <NavItem rounded={RIGHT} href="/log In">Log In</NavItem>
+        <NavItem rounded={LEFT} href="/">Home</NavItem>
+        <NavItem rounded={CENTER} href="/project">Projects</NavItem>
+        <NavItem rounded={CENTER} href="/modAI/data">Data</NavItem>
+        <NavItem rounded={CENTER} href="/signin">Sign In</NavItem>
+        <NavItem rounded={RIGHT} href="/login">Log In</NavItem>
       </Nav>
     </div>
     <div className='flex flex-col items-center mx-6 mt-6'>
