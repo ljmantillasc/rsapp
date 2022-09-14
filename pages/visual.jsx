@@ -46,10 +46,17 @@
 //     }
 // }
 
+console.log('My Application Version', process.env.DB_HOST);
+
 function App() {
     return(
         <div>
             hello
+            <div>
+                aqui
+                <p>{ process.env.NEXT_PUBLIC_SUPABASE_URL }</p>
+                <p>Hola { process.env.NEXT_PUBLIC_SUPABASE_KEY }</p>
+            </div>
         </div>
     );
 }
